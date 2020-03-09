@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Framework\API\Services\Omdb\" />
     <Folder Include="Framework\Frontend\" />
     <Folder Include="Framework\Behaviordriven\" />
     <Folder Include="Framework\Utils\Hooks\" />

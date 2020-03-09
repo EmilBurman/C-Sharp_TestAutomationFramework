@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestTemplate.Framework.API.Services.Twitter
+namespace TestTemplate.Framework.API.Services.Omdb
 {
-    class TwitterServiceManager : ApiManagementInterface
+    class OmdbServiceManger : ApiManagementInterface
     {
         public HttpResponse GetResponseFromUriAsHttpResponse(string uriToConnectThrough)
         {

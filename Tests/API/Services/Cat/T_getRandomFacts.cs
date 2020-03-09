@@ -1,7 +1,9 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
+using TestTemplate.Framework.API;
 using TestTemplate.Framework.API.Services.Cat;
 
 namespace TestTemplate.Tests.API.Services.Cat
@@ -16,8 +18,9 @@ namespace TestTemplate.Tests.API.Services.Cat
                                                                      .UsingAnimalType(animalType)
                                                                      .Build()
                                                                      .ToString();
-            TestContext.WriteLine(uriRequest);
-            Console.WriteLine(uriRequest);
+            string request = ApiServiceManager.GetResponseFromUriAsJsonString(Framework.API.Services.Misc.AvailableApiServices.CAT, uriRequest);
+            Console.WriteLine(uriRequest + request);
+            Assert.IsNotNull(request);
         }
 
         [Test]

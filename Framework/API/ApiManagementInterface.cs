@@ -7,12 +7,12 @@ namespace TestTemplate.Framework.API
 {
     interface ApiManagementInterface
     {
-        String getResponseFromUriAsJsonString(String uriToConnectThrough);
+        String GetResponseFromUriAsJsonString(String uriToConnectThrough);
 
-        String getSpecificValueFromJsonResponse(String uriToConnectThrough, String jsonKey);
+        String GetSpecificValueFromJsonResponse(String uriToConnectThrough, String jsonKey);
 
-        String getSpecificValueFromXmlResponse(String uriToConnectThrough, String xmlKey);
+        String GetSpecificValueFromXmlResponse(String uriToConnectThrough, String xmlKey);
 
-        HttpResponse getResponseFromUriAsHttpResponse(String uriToConnectThrough);
+        HttpResponse GetResponseFromUriAsHttpResponse(String uriToConnectThrough);
     }
 }

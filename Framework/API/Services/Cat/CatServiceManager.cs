@@ -7,22 +7,26 @@ namespace TestTemplate.Framework.API.Services.Cat
 {
     class CatServiceManager : ApiManagementInterface
     {
-        public HttpResponse getResponseFromUriAsHttpResponse(string uriToConnectThrough)
+        static readonly string host = "https://cat-fact.herokuapp.com";
+        public HttpResponse GetResponseFromUriAsHttpResponse(string uriToConnectThrough)
         {
             throw new NotImplementedException();
         }
 
-        public string getResponseFromUriAsJsonString(string uriToConnectThrough)
+        public string GetResponseFromUriAsJsonString(string uriToConnectThrough)
+        {
+            var restHost = new RestClient(host);
+            var request = new RestRequest(uriToConnectThrough);
+            String response = restHost.Get(request).Content;
+            return response;
+        }
+
+        public string GetSpecificValueFromJsonResponse(string uriToConnectThrough, string jsonKey)
         {
             throw new NotImplementedException();
         }
 
-        public string getSpecificValueFromJsonResponse(string uriToConnectThrough, string jsonKey)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string getSpecificValueFromXmlResponse(string uriToConnectThrough, string xmlKey)
+        public string GetSpecificValueFromXmlResponse(string uriToConnectThrough, string xmlKey)
         {
             throw new NotImplementedException();
         }

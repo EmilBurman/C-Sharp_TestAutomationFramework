@@ -11,7 +11,7 @@ namespace TestTemplate.Tests.API
         [SetUp]
         public void checkLiveness()
         {
-            Assert.Pass();
+
         }
     }
 }
