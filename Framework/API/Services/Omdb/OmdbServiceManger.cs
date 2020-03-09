@@ -7,7 +7,7 @@ namespace TestTemplate.Framework.API.Services.Omdb
 {
     class OmdbServiceManger : ApiManagementInterface
     {
-        public HttpResponse GetResponseFromUriAsHttpResponse(string uriToConnectThrough)
+        public RestResponse GetResponseFromUriAsRestResponse(string uriToConnectThrough)
         {
             throw new NotImplementedException();
         }

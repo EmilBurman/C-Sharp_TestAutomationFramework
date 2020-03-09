@@ -1,30 +1,19 @@
 ﻿using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TestTemplate.Framework.API.Services.Cat
 {
     class CatServiceManager : ApiManagementInterface
     {
         static readonly string host = "https://cat-fact.herokuapp.com";
-        public HttpResponse GetResponseFromUriAsHttpResponse(string uriToConnectThrough)
+        public RestResponse GetResponseFromUriAsRestResponse(string uriToConnectThrough)
         {
-            throw new NotImplementedException();
+            return Adapters.HttpAdapter.SendGetCall(host,uriToConnectThrough);
         }
 
-        public string GetResponseFromUriAsJsonString(string uriToConnectThrough)
-        {
-            var restHost = new RestClient(host);
-            var request = new RestRequest(uriToConnectThrough);
-            String response = restHost.Get(request).Content;
-            return response;
-        }
+        public string GetResponseFromUriAsJsonString(string uriToConnectThrough) => Adapters.HttpAdapter.SendGetCall(host, uriToConnectThrough).Content;
 
-        public string GetSpecificValueFromJsonResponse(string uriToConnectThrough, string jsonKey)
-        {
-            throw new NotImplementedException();
-        }
+        public string GetSpecificValueFromJsonResponse(string uriToConnectThrough, string jsonKey) => Adapters.HttpAdapter.CheckForJsonKeyInResponse(host, uriToConnectThrough, jsonKey, null);
 
         public string GetSpecificValueFromXmlResponse(string uriToConnectThrough, string xmlKey)
         {

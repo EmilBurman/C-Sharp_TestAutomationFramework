@@ -13,6 +13,6 @@ namespace TestTemplate.Framework.API
 
         String GetSpecificValueFromXmlResponse(String uriToConnectThrough, String xmlKey);
 
-        HttpResponse GetResponseFromUriAsHttpResponse(String uriToConnectThrough);
+        RestResponse GetResponseFromUriAsRestResponse(String uriToConnectThrough);
     }
 }

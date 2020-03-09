@@ -28,10 +28,10 @@ namespace TestTemplate.Framework.API
             return apiHost.GetSpecificValueFromXmlResponse(uriToConnectThrough, xmlKey);
         }
 
-        public static HttpResponse GetResponseFromUriAsHttpResponse(AvailableApiServices requestedApiHost, String uriToConnectThrough)
+        public static RestResponse GetResponseFromUriAsRestResponse(AvailableApiServices requestedApiHost, String uriToConnectThrough)
         {
             ApiManagementInterface apiHost = apiFactory(requestedApiHost);
-            return apiHost.GetResponseFromUriAsHttpResponse(uriToConnectThrough);
+            return apiHost.GetResponseFromUriAsRestResponse(uriToConnectThrough);
         }
 
         private static ApiManagementInterface apiFactory(AvailableApiServices requestedApi)

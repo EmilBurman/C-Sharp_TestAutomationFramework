@@ -1,13 +1,11 @@
 ﻿using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TestTemplate.Framework.API.Services.Twitter
 {
     class TwitterServiceManager : ApiManagementInterface
     {
-        public HttpResponse GetResponseFromUriAsHttpResponse(string uriToConnectThrough)
+        public RestResponse GetResponseFromUriAsRestResponse(string uriToConnectThrough)
         {
             throw new NotImplementedException();
         }
