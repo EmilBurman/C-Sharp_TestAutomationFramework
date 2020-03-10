@@ -17,7 +17,7 @@ namespace TestTemplate.Tests.API.Services.Cat
                                                                      .UsingAnimalType(animalType)
                                                                      .Build()
                                                                      .ToString();
-            string request = ApiServiceManager.GetResponseFromUriAsJsonString(Framework.API.Services.Misc.AvailableApiServices.CAT,
+            string request = ApiServiceManager.GetResponseFromUriAsJsonString(AvailableApiServices.CAT,
                                                                               uriRequest);
             Console.WriteLine(uriRequest + request);
             Assert.IsNotNull(request);

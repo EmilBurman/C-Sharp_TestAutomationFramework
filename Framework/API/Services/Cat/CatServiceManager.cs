@@ -6,10 +6,7 @@ namespace TestTemplate.Framework.API.Services.Cat
     class CatServiceManager : ApiManagementInterface
     {
         static readonly string host = "https://cat-fact.herokuapp.com";
-        public RestResponse GetResponseFromUriAsRestResponse(string uriToConnectThrough)
-        {
-            return Adapters.HttpAdapter.SendGetCall(host,uriToConnectThrough);
-        }
+        public RestResponse GetResponseFromUriAsRestResponse(string uriToConnectThrough) => Adapters.HttpAdapter.SendGetCall(host, uriToConnectThrough);
 
         public string GetResponseFromUriAsJsonString(string uriToConnectThrough) => Adapters.HttpAdapter.SendGetCall(host, uriToConnectThrough).Content;
 

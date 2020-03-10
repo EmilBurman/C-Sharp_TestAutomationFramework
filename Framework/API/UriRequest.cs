@@ -27,9 +27,9 @@ namespace TestTemplate.Framework.API
 
         public override string ToString()
         {
-            string uri = string.Join("/&", uriDictionary.Select(x => x.Key + "=" + x.Value));
-            Console.WriteLine(uri);
-            return "/?" + uri;
+            string uri = ("/?" + string.Join("&", uriDictionary.Select(x => x.Key + "=" + x.Value)));
+            Console.WriteLine("Uri used for the request: " + uri);
+            return uri;
         }
 
         public String convertStringToUriSafeString(String initalString)

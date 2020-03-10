@@ -17,9 +17,9 @@ namespace TestTemplate.Framework.API.Services.Cat
         public override String ToString()
         {
             string endpoint = CreateEndpointFromVariables();
-            string uri = string.Join("/&",
+            string uri = string.Join("&",
                                      uriDictionary.Select(x => x.Key + "=" + x.Value));
-            Console.WriteLine(uri);
+            Console.WriteLine("URI used for the cat request: " + uri);
             return (endpoint + uri);
         }
 

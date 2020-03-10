@@ -21,8 +21,8 @@
   <ItemGroup>
     <Folder Include="Framework\Frontend\" />
     <Folder Include="Framework\Behaviordriven\" />
-    <Folder Include="Framework\Utils\Hooks\" />
-    <Folder Include="Framework\Utils\Settings\" />
+    <Folder Include="Framework\Utils\" />
+    <Folder Include="Tests\API\Services\Twitter\" />
     <Folder Include="Tests\Frontend\" />
     <Folder Include="Tests\Behaviordriven\" />
   </ItemGroup>
