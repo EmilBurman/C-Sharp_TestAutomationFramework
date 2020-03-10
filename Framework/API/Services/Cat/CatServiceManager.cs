@@ -1,7 +1,7 @@
 ﻿using RestSharp;
 using System;
 
-namespace TestTemplate.Framework.API.Services.Cat
+namespace TestAutomationFramework.Framework.API.Services.Cat
 {
     class CatServiceManager : ApiManagementInterface
     {

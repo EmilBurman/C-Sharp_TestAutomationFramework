@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestTemplate.Tests
+namespace TestAutomationFramework.Tests
 {
     /* This class is run before any and all test cases.
      * It is used as a container of which everything else is run after.

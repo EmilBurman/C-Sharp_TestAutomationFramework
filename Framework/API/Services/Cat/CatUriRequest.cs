@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace TestTemplate.Framework.API.Services.Cat
+namespace TestAutomationFramework.Framework.API.Services.Cat
 {
     class CatUriRequest: UriRequest
     {

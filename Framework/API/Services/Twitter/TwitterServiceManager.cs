@@ -1,7 +1,7 @@
 ﻿using RestSharp;
 using System;
 
-namespace TestTemplate.Framework.API.Services.Twitter
+namespace TestAutomationFramework.Framework.API.Services.Twitter
 {
     class TwitterServiceManager : ApiManagementInterface
     {

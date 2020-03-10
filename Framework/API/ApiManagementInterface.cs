@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestTemplate.Framework.API
+namespace TestAutomationFramework.Framework.API
 {
     interface ApiManagementInterface
     {

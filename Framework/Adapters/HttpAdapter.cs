@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestTemplate.Framework.Adapters
+namespace TestAutomationFramework.Framework.Adapters
 {
     class HttpAdapter
     {

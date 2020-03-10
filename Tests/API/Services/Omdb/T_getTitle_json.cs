@@ -2,13 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using TestTemplate.Framework.API;
-using TestTemplate.Framework.API.Services.Misc;
-using TestTemplate.Framework.API.Services.Omdb;
+using TestAutomationFramework.Framework.API;
+using TestAutomationFramework.Framework.API.Services.Misc;
+using TestAutomationFramework.Framework.API.Services.Omdb;
 
-namespace TestTemplate.Tests.API.Services.Omdb
+namespace TestAutomationFramework.Tests.API.Services.Omdb
 {
-    class T_getTitle_json
+    class T_getTitle_json : AbstractApiTestcase
     {
         [Test, TestCaseSource("MovieTitles")]
         public void ValidateMovieExists(String title)
@@ -21,7 +21,7 @@ namespace TestTemplate.Tests.API.Services.Omdb
                     .Build()
                     .ToString();
             // Make request and get the answer as a JSON string
-            String request = ApiServiceManager.GetSpecificValueFromJsonResponse(AvailableApiServices.OMDB, uriRequest, "Title");
+            string request = ApiServiceManager.GetSpecificValueFromJsonResponse(AvailableApiServices.OMDB, uriRequest, "Title");
             //Make sure the title matches the expected value
             Assert.IsTrue(request.Contains(title));
         }
@@ -44,7 +44,7 @@ namespace TestTemplate.Tests.API.Services.Omdb
                     .Build()
                     .ToString();
             // Make request and get the answer as a JSON string
-            String request = ApiServiceManager.GetSpecificValueFromJsonResponse(AvailableApiServices.OMDB, uriRequest, "Title");
+            string request = ApiServiceManager.GetSpecificValueFromJsonResponse(AvailableApiServices.OMDB, uriRequest, "Title");
             //Make sure the title matches the expected value
             Assert.IsTrue(request.ToLower().Contains(title.ToLower()));
         }

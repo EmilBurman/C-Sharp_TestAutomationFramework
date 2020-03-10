@@ -1,11 +1,11 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using TestTemplate.Framework.API;
-using TestTemplate.Framework.API.Services.Cat;
-using TestTemplate.Framework.API.Services.Misc;
+using TestAutomationFramework.Framework.API;
+using TestAutomationFramework.Framework.API.Services.Cat;
+using TestAutomationFramework.Framework.API.Services.Misc;
 
-namespace TestTemplate.Tests.API.Services.Cat
+namespace TestAutomationFramework.Tests.API.Services.Cat
 {
     public class GetRandomFacts : AbstractApiTestcase
     {

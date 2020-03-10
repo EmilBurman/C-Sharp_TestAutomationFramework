@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestTemplate.Tests.API
+namespace TestAutomationFramework.Tests.API
 {
     [TestFixture]
     abstract public class AbstractApiTestcase

@@ -2,11 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using TestTemplate.Framework.API.Services.Cat;
-using TestTemplate.Framework.API.Services.Misc;
-using TestTemplate.Framework.API.Services.Omdb;
+using TestAutomationFramework.Framework.API.Services.Cat;
+using TestAutomationFramework.Framework.API.Services.Omdb;
+using TestAutomationFramework.Framework.API.Services.Misc;
 
-namespace TestTemplate.Framework.API
+namespace TestAutomationFramework.Framework.API
 {
     class ApiServiceManager
     {

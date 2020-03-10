@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestTemplate.Framework.API.Services.Misc
+namespace TestAutomationFramework.Framework.API.Services.Misc
 {
     class OmdbApiTerms
     {

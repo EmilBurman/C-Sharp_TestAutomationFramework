@@ -6,7 +6,6 @@
     <IsPackable>false</IsPackable>
 
     <AssemblyName>TestAutomationFramework</AssemblyName>
-
     <RootNamespace>TestAutomationFramework</RootNamespace>
   </PropertyGroup>
 

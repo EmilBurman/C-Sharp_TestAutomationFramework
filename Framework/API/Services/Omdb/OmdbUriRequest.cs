@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestTemplate.Framework.API.Services.Omdb
+namespace TestAutomationFramework.Framework.API.Services.Omdb
 {
     class OmdbUriRequest: UriRequest
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-namespace TestTemplate.Framework.API
+namespace TestAutomationFramework.Framework.API
 {
     public class UriRequest
     {
