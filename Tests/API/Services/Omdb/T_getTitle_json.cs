@@ -13,10 +13,10 @@ namespace TestAutomationFramework.Tests.API.Services.Omdb
         [Test, TestCaseSource("MovieTitles")]
         public void ValidateMovieExists(String title)
         {
-            String uriRequest = new OmdbUriRequest.OmdbRequestBuilder(OmdbApiTerms.TITLE, title)
-                    .UsingFormat(OmdbApiTerms.MOVIE)
-                    .UsingDatatype(OmdbApiTerms.JSON_DATATYPE)
-                    .WithPlotType(OmdbApiTerms.SHORT_PLOT)
+            String uriRequest = new OmdbUriRequest.OmdbRequestBuilder(OmdbTerms.TITLE, title)
+                    .UsingFormat(OmdbTerms.MOVIES)
+                    .UsingDatatype(OmdbTerms.JSON_DATATYPE)
+                    .WithPlotType(OmdbTerms.SHORT_PLOT)
                     .WithPageNumber(1)
                     .Build()
                     .ToString();
@@ -36,10 +36,10 @@ namespace TestAutomationFramework.Tests.API.Services.Omdb
         [Test, TestCaseSource("SeriesTitles")]
         public void ValidateSeriesExists(String title)
         {
-            String uriRequest = new OmdbUriRequest.OmdbRequestBuilder(OmdbApiTerms.TITLE, title)
-                    .UsingFormat(OmdbApiTerms.SERIES)
-                    .UsingDatatype(OmdbApiTerms.JSON_DATATYPE)
-                    .WithPlotType(OmdbApiTerms.FULL_PLOT)
+            String uriRequest = new OmdbUriRequest.OmdbRequestBuilder(OmdbTerms.TITLE, title)
+                    .UsingFormat(OmdbTerms.SERIES)
+                    .UsingDatatype(OmdbTerms.JSON_DATATYPE)
+                    .WithPlotType(OmdbTerms.FULL_PLOT)
                     .WithPageNumber(1)
                     .Build()
                     .ToString();
