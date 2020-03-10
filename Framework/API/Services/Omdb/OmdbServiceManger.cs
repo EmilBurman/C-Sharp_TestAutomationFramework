@@ -7,8 +7,8 @@ namespace TestAutomationFramework.Framework.API.Services.Omdb
 {   
     class OmdbServiceManger : ApiManagementInterface
     {
-        static readonly string host = "http://www.omdbapi.com";
-        static readonly string apikey = "&apikey=" + "";
+        static readonly string host = Properties.Resources.Omdb_api_host;
+        static readonly string apikey = "&apikey=" + Properties.Resources.Omdb_api_key;
         public RestResponse GetResponseFromUriAsRestResponse(string uriToConnectThrough) => Adapters.HttpAdapter.SendGetCall(host, uriToConnectThrough + apikey);
 
         public string GetResponseFromUriAsJsonString(string uriToConnectThrough) => Adapters.HttpAdapter.SendGetCall(host, uriToConnectThrough+apikey).Content;
