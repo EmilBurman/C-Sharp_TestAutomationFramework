@@ -1,0 +1,14 @@
+- regExp: ".*\\.ts+$"
+  labels: ["typescript"]
+- regExp: "(.*\\.yml+$|.*\\.properties+$)"
+  labels: ["configuration"]
+- regExp: ".*\\.sql+$"
+  labels: ["database", "critical"]
+- regExp: ".*\\.md+$"
+  labels: ["documentation"]
+- regExp: ".*\\.cs+$"
+  labels: ["code"]
+- regExp: ".*\\.png+$"
+  labels: ["images"]
+- regExp: ".*\\.(zip|jar|war|ear)+$"
+  labels: ["artifact", "invalid"]
