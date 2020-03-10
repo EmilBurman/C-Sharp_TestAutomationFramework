@@ -13,7 +13,7 @@ namespace TestAutomationFramework.Tests.API.Services.Omdb
         [Test, TestCaseSource("SearchId")]
         public void validateSpecificItem(string id)
         {
-            string uriReq = new OmdbUriRequest.OmdbRequestBuilder(OmdbApiTerms.ID, id)
+            string uriReq = new OmdbUriRequest.OmdbRequestBuilder(OmdbTerms.ID, id)
                     .Build()
                     .ToString();
             string request = ApiServiceManager.GetSpecificValueFromJsonResponse(AvailableApiServices.OMDB, uriReq, "imdbID");

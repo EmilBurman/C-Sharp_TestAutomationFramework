@@ -23,11 +23,32 @@
 
   <ItemGroup>
     <Folder Include="Framework\Frontend\" />
-    <Folder Include="Framework\Behaviordriven\" />
-    <Folder Include="Framework\Utils\" />
-    <Folder Include="Tests\API\Services\Twitter\" />
     <Folder Include="Tests\Frontend\" />
     <Folder Include="Tests\Behaviordriven\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Framework\API\Services\Omdb\OmdbTerms.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OmdbTerms.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Framework\API\Services\Omdb\OmdbTerms.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OmdbTerms.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
