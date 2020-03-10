@@ -6,6 +6,6 @@ namespace TestTemplate.Framework.API.Services.Misc
 {
     enum AvailableApiServices
     {
-        CAT, OMDB
+        CAT, OMDB, TWITTER
     }
 }
