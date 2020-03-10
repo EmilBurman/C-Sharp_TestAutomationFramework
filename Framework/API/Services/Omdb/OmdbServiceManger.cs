@@ -8,7 +8,7 @@ namespace TestTemplate.Framework.API.Services.Omdb
     class OmdbServiceManger : ApiManagementInterface
     {
         static readonly string host = "http://www.omdbapi.com";
-        static readonly string apikey = "&apikey=" + "25f61fa0";
+        static readonly string apikey = "&apikey=" + "";
         public RestResponse GetResponseFromUriAsRestResponse(string uriToConnectThrough) => Adapters.HttpAdapter.SendGetCall(host, uriToConnectThrough + apikey);
 
         public string GetResponseFromUriAsJsonString(string uriToConnectThrough) => Adapters.HttpAdapter.SendGetCall(host, uriToConnectThrough+apikey).Content;
