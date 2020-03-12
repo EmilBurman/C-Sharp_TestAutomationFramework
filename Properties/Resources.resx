@@ -124,7 +124,7 @@
     <value>http://www.omdbapi.com</value>
   </data>
   <data name="Omdb-api-key" xml:space="preserve">
-    <value>25f61fa0</value>
+    <value />
   </data>
   <data name="Twitter-api-host" xml:space="preserve">
     <value />
