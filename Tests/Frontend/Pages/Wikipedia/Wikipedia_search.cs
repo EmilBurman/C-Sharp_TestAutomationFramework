@@ -9,7 +9,7 @@ namespace TestAutomationFramework.Tests.Frontend.Pages.Wikipedia
     class Wikipedia_search: AbstractFrontendTestcase
     {
         [Test, TestCaseSource("WikipediaTerms")]
-        public void HomePageTest(string term)
+        public void Wikipedia_searchForTerm(string term)
         {
             // TODO: Add your test code here
             Wikipedia_startpage wikipedia_start = new Wikipedia_startpage(this.DriverContext);
