@@ -4,7 +4,7 @@ This respository is a simple template project that allows for API and frontend t
 It's based on:
  - Nunit 3 
  - RestSharp
- - Selenium
+ - Ocaramba / Objectify
  - SpecFlow
   
 It is possible to split this project into a pure frontend or a pure API testing template.The project also supports Specflow and BDD, but it is optional and the other parts of the project can be used without the BDD integration.
@@ -24,6 +24,8 @@ The Omdb API uses a key that is contained within the secrets in this repository.
 ## Running the tests
 
 Tests can run inside of Visual Studio through its testrunner, but can also be run through the commandline.
+
+We are currently working on implementing the Nunit attribute/ category system to run specific types of test from the commandline.
 
 
 ### Secrets and API keys

@@ -65,7 +65,7 @@ namespace TestAutomationFramework.Properties {
         /// </summary>
         internal static string Cat_api_host {
             get {
-                return ResourceManager.GetString("Cat.api.host", resourceCulture);
+                return ResourceManager.GetString("Cat-api-host", resourceCulture);
             }
         }
         
@@ -74,7 +74,7 @@ namespace TestAutomationFramework.Properties {
         /// </summary>
         internal static string Omdb_api_host {
             get {
-                return ResourceManager.GetString("Omdb.api.host", resourceCulture);
+                return ResourceManager.GetString("Omdb-api-host", resourceCulture);
             }
         }
         
@@ -83,7 +83,7 @@ namespace TestAutomationFramework.Properties {
         /// </summary>
         internal static string Omdb_api_key {
             get {
-                return ResourceManager.GetString("Omdb.api.key", resourceCulture);
+                return ResourceManager.GetString("Omdb-api-key", resourceCulture);
             }
         }
         
@@ -92,7 +92,7 @@ namespace TestAutomationFramework.Properties {
         /// </summary>
         internal static string Twitter_api_host {
             get {
-                return ResourceManager.GetString("Twitter.api.host", resourceCulture);
+                return ResourceManager.GetString("Twitter-api-host", resourceCulture);
             }
         }
     }

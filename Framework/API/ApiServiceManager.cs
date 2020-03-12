@@ -5,6 +5,7 @@ using System.Text;
 using TestAutomationFramework.Framework.API.Services.Cat;
 using TestAutomationFramework.Framework.API.Services.Omdb;
 using TestAutomationFramework.Framework.API.Services.Misc;
+using TestAutomationFramework.Framework.API.Services.Twitter;
 
 namespace TestAutomationFramework.Framework.API
 {
@@ -42,6 +43,8 @@ namespace TestAutomationFramework.Framework.API
                     return new CatServiceManager();
                 case AvailableApiServices.OMDB:
                     return new OmdbServiceManger();
+                case AvailableApiServices.TWITTER:
+                    return new TwitterServiceManager();
                 default:
                     throw new FormatException("Requested API is not available. Please check configuration.");
             }
