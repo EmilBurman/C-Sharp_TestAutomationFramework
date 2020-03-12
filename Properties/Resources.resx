@@ -117,16 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Cat.api.host" xml:space="preserve">
+  <data name="Cat-api-host" xml:space="preserve">
     <value>https://cat-fact.herokuapp.com</value>
   </data>
-  <data name="Omdb.api.host" xml:space="preserve">
+  <data name="Omdb-api-host" xml:space="preserve">
     <value>http://www.omdbapi.com</value>
   </data>
-  <data name="Omdb.api.key" xml:space="preserve">
-    <value />
+  <data name="Omdb-api-key" xml:space="preserve">
+    <value>25f61fa0</value>
   </data>
-  <data name="Twitter.api.host" xml:space="preserve">
+  <data name="Twitter-api-host" xml:space="preserve">
     <value />
   </data>
 </root>

@@ -1,4 +1,5 @@
 ﻿using Ocaramba;
+using Ocaramba.Extensions;
 using Ocaramba.Types;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,19 @@ namespace TestAutomationFramework.Framework.Frontend.Pages.Wikipedia
         public Wikipedia_startpage(DriverContext driverContext): base(driverContext)
         {
 
+        }
+
+        public bool Open()
+        {
+            string url = BaseConfiguration.GetUrlValue;
+            Driver.NavigateTo(new Uri(url));
+            return Driver.GetElement(LOGO).Displayed;
+        }
+
+        public void SearchForTerm(string term)
+        {
+            Driver.GetElement(SEARCH_FIELD).SendKeys(term);
+            Driver.GetElement(SEARCH_BUTTON).Click();
         }
     }
 }

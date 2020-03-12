@@ -7,12 +7,12 @@ namespace TestAutomationFramework.Framework.API
 {
     interface ApiManagementInterface
     {
-        String GetResponseFromUriAsJsonString(String uriToConnectThrough);
+        string GetResponseFromUriAsJsonString(string uriToConnectThrough);
 
-        String GetSpecificValueFromJsonResponse(String uriToConnectThrough, String jsonKey);
+        string GetSpecificValueFromJsonResponse(string uriToConnectThrough, string jsonKey);
 
-        String GetSpecificValueFromXmlResponse(String uriToConnectThrough, String xmlKey);
+        string GetSpecificValueFromXmlResponse(string uriToConnectThrough, string xmlKey);
 
-        RestResponse GetResponseFromUriAsRestResponse(String uriToConnectThrough);
+        RestResponse GetResponseFromUriAsRestResponse(string uriToConnectThrough);
     }
 }

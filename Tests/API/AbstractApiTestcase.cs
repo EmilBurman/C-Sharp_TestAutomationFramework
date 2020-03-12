@@ -6,7 +6,7 @@ using System.Text;
 namespace TestAutomationFramework.Tests.API
 {
     [TestFixture]
-    abstract public class AbstractApiTestcase
+    abstract public class AbstractApiTestcase: TestcaseSetup
     {
         [SetUp]
         public void checkLiveness()
