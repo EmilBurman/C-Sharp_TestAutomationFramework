@@ -30,6 +30,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Framework\API\Services\Omdb\OmdbTerms.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
