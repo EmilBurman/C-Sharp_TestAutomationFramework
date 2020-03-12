@@ -9,8 +9,9 @@ using TestAutomationFramework.Tests.Tags;
 
 namespace TestAutomationFramework.Tests.API.Services.Omdb
 {
-    [TestOf({TestcaseTags.API)]
-    [TestOf({TestcaseTags.API_OMDB)]
+    [TestOf(TestcaseTags.API)]
+    [TestOf(TestcaseTags.API_OMDB)]
+    [Category(TestcaseTags.API)]
     class T_getId_json : AbstractApiTestcase
     {
         [Test, TestCaseSource("SearchId")]

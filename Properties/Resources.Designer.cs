@@ -22,7 +22,7 @@ namespace TestAutomationFramework.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resources {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace TestAutomationFramework.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TestAutomationFramework.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace TestAutomationFramework.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,36 +63,36 @@ namespace TestAutomationFramework.Properties {
         /// <summary>
         ///   Looks up a localized string similar to https://cat-fact.herokuapp.com.
         /// </summary>
-        public static string Cat_api_host {
+        internal static string Cat_api_host {
             get {
-                return ResourceManager.GetString("Cat.api.host", resourceCulture);
+                return ResourceManager.GetString("Cat-api-host", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to http://www.omdbapi.com.
         /// </summary>
-        public static string Omdb_api_host {
+        internal static string Omdb_api_host {
             get {
-                return ResourceManager.GetString("Omdb.api.host", resourceCulture);
+                return ResourceManager.GetString("Omdb-api-host", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string Omdb_api_key {
+        internal static string Omdb_api_key {
             get {
-                return ResourceManager.GetString("Omdb.api.key", resourceCulture);
+                return ResourceManager.GetString("Omdb-api-key", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string Twitter_api_host {
+        internal static string Twitter_api_host {
             get {
-                return ResourceManager.GetString("Twitter.api.host", resourceCulture);
+                return ResourceManager.GetString("Twitter-api-host", resourceCulture);
             }
         }
     }

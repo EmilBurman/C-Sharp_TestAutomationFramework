@@ -7,8 +7,9 @@ using TestAutomationFramework.Tests.Tags;
 
 namespace TestAutomationFramework.Tests.Frontend.Pages.Wikipedia
 {
-    [TestOf({TestcaseTags.FRONTEND)]
-    [TestOf({TestcaseTags.FRONTEND_WIKIPEDIA)]
+    [TestOf(TestcaseTags.FRONTEND)]
+    [TestOf(TestcaseTags.FRONTEND_WIKIPEDIA)]
+    [Category(TestcaseTags.FRONTEND)]
     class Wikipedia_search: AbstractFrontendTestcase
     {
         [Test, TestCaseSource("WikipediaTerms")]

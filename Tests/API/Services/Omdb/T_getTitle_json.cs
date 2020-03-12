@@ -5,11 +5,13 @@ using System.Text;
 using TestAutomationFramework.Framework.API;
 using TestAutomationFramework.Framework.API.Services.Misc;
 using TestAutomationFramework.Framework.API.Services.Omdb;
+using TestAutomationFramework.Tests.Tags;
 
 namespace TestAutomationFramework.Tests.API.Services.Omdb
 {
-    [TestOf({TestcaseTags.API)]
-    [TestOf({TestcaseTags.API_OMDB)]
+    [TestOf(TestcaseTags.API)]
+    [TestOf(TestcaseTags.API_OMDB)]
+    [Category(TestcaseTags.API)]
     class T_getTitle_json : AbstractApiTestcase
     {
         [Test, TestCaseSource("MovieTitles")]

@@ -9,8 +9,9 @@ using TestAutomationFramework.Tests.Tags;
 
 namespace TestAutomationFramework.Tests.API.Services.Cat
 {
-    [TestOf({TestcaseTags.API)]
-    [TestOf({TestcaseTags.API_CAT)]
+    [TestOf(TestcaseTags.API)]
+    [TestOf(TestcaseTags.API_CAT)]
+    [Category(TestcaseTags.API)]
     public class GetRandomFacts : AbstractApiTestcase
     {
         private string uriRequest;
