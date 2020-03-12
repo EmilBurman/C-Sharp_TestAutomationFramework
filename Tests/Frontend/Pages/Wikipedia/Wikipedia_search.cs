@@ -3,9 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using TestAutomationFramework.Framework.Frontend.Pages.Wikipedia;
+using TestAutomationFramework.Tests.Tags;
 
 namespace TestAutomationFramework.Tests.Frontend.Pages.Wikipedia
 {
+    [TestOf({TestcaseTags.FRONTEND)]
+    [TestOf({TestcaseTags.FRONTEND_WIKIPEDIA)]
     class Wikipedia_search: AbstractFrontendTestcase
     {
         [Test, TestCaseSource("WikipediaTerms")]

@@ -8,6 +8,8 @@ using TestAutomationFramework.Framework.API.Services.Omdb;
 
 namespace TestAutomationFramework.Tests.API.Services.Omdb
 {
+    [TestOf({TestcaseTags.API)]
+    [TestOf({TestcaseTags.API_OMDB)]
     class T_getTitle_json : AbstractApiTestcase
     {
         [Test, TestCaseSource("MovieTitles")]

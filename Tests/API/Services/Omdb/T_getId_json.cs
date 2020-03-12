@@ -5,9 +5,12 @@ using System.Text;
 using TestAutomationFramework.Framework.API;
 using TestAutomationFramework.Framework.API.Services.Misc;
 using TestAutomationFramework.Framework.API.Services.Omdb;
+using TestAutomationFramework.Tests.Tags;
 
 namespace TestAutomationFramework.Tests.API.Services.Omdb
 {
+    [TestOf({TestcaseTags.API)]
+    [TestOf({TestcaseTags.API_OMDB)]
     class T_getId_json : AbstractApiTestcase
     {
         [Test, TestCaseSource("SearchId")]

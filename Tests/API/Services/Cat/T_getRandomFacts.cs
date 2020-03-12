@@ -4,9 +4,13 @@ using System.Collections.Generic;
 using TestAutomationFramework.Framework.API;
 using TestAutomationFramework.Framework.API.Services.Cat;
 using TestAutomationFramework.Framework.API.Services.Misc;
+using TestAutomationFramework.Properties;
+using TestAutomationFramework.Tests.Tags;
 
 namespace TestAutomationFramework.Tests.API.Services.Cat
 {
+    [TestOf({TestcaseTags.API)]
+    [TestOf({TestcaseTags.API_CAT)]
     public class GetRandomFacts : AbstractApiTestcase
     {
         private string uriRequest;
