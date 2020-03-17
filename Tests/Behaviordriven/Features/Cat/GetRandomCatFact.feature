@@ -1,11 +1,11 @@
 ﻿Feature: GetRandomCatFact
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	In order to keep people happy
+	As a common person
+	I want to get a random cat fact
 
-@mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+@cat
+Scenario: Get random cat fact
+	Given I have connected through the random endpoint
+	And I haven't entered a specfic ID
+	When I recieve the response
+	Then the result should contain a random cat fact

@@ -26,11 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Tests\Behaviordriven\Features\Omdb\" />
-    <Folder Include="Tests\Behaviordriven\Scenarios\Omdb\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
