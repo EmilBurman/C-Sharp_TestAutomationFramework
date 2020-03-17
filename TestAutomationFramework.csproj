@@ -26,7 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Tests\Behaviordriven\" />
+    <Folder Include="Tests\Behaviordriven\Features\Omdb\" />
+    <Folder Include="Tests\Behaviordriven\Scenarios\Omdb\" />
   </ItemGroup>
 
   <ItemGroup>
